@@ -35,8 +35,24 @@ from EMPLOYEES
 where SALARY=(select max(SALARY) from EMPLOYEES where SALARY < (select max (SALARY) from EMPLOYEES));
 
 -----------------------------
+select * from EMPLOYEES
+order by SALARY desc;
+
 select *
-from EMPLOYEES;
+from EMPLOYEES
+where ROWNUM <11;
+
+--list the employees who is making top 10 salary
+select *
+from EMPLOYEES
+where ROWNUM < 11
+order by SALARY desc;
+
+--order all employees based on salary high to low then display only first 10 result
+select *
+from(select * from EMPLOYEES order by SALARY desc)
+where rownum < 6;
+
 
 
 
