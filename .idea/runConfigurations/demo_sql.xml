@@ -1,5 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="demo.sql" type="DatabaseScript" editBeforeRun="true" singleton="false" nameIsGenerated="true">
+  <configuration default="false" name="demo.sql" type="DatabaseScript" editBeforeRun="true" singleton="false">
+    <script-file value="$PROJECT_DIR$/Queries/demo.sql" />
     <script-file value="$PROJECT_DIR$/Queries/demo.sql" />
     <script-mode>FILE</script-mode>
     <method v="2" />
